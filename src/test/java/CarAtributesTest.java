@@ -3,15 +3,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*; 
 
 import dev.arturo.models.CarAtributes;
+import dev.arturo.models.CarType;
 import dev.arturo.models.enumatributes.CarColors;
-import dev.arturo.models.enumatributes.CarType;
 import dev.arturo.models.enumatributes.Foul;
 
 public class CarAtributesTest {
-    CarAtributes carAtributes = new CarAtributes("Toyota", 2007, 4.5, Foul.gasoline, CarType.suv, 5, 5, 220, CarColors.purple, 180);
+    CarAtributes carAtributes = new CarAtributes("Toyota", 2007, 4.5, Foul.gasoline, CarType.suv, 5, 5, 220, CarColors.purple, 0);
     @Test
     void testGetActualSpeed() {
-    assertThat(carAtributes.getActualSpeed(), is(180));
+    assertThat(carAtributes.getActualSpeed(), is(0));
     }
 
     @Test
