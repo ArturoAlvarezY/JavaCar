@@ -29,7 +29,7 @@ public CarAtributes(String branch, Integer model, Double motor, Foul foul, CarTy
     this.sits = sits;
     this.speed = speed;
     this.carColors = carColors;
-    this.actualSpeed = actualSpeed;
+    this.actualSpeed = 0;
 }
 public String getBranch() {
     return branch;
