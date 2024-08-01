@@ -1,31 +1,20 @@
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-
 import org.junit.jupiter.api.Test;
-
-import dev.arturo.CarAcelerate;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*; 
 import dev.arturo.CarAtributes;
 import dev.arturo.CarTime;
 
 public class CarTimeTest {
+    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
 
-     CarTime carTime;
-     CarAtributes carAtributes;
-     CarAcelerate carAcelerate;
-
-     
-
+    CarTime carTime = new CarTime();
 
     @Test
     void testArrivalTime() {
+    carAtributes.setActualSpeed(150);
+    assertThat(carTime.arrivalTime(carAtributes, 150.0), is(1));
     
-      
+
+
     }
 }
-
-/* public Integer acelerate (CarAtributes carAtributes, Integer newSpeed) {
-    int speedAceleration = carAtributes.getActualSpeed() + newSpeed;
-
-    carAtributes.setActualSpeed(speedAceleration);
-    return carAtributes.getActualSpeed();
-} */

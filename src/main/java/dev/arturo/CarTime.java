@@ -5,25 +5,33 @@ public class CarTime {
     CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, 100, null, 0);
 
 
-    public Integer arrivalTime (Integer integer, Double km) {
-        Integer velocity = integer.acelerate(carAtributes, 25);
+    public Integer arrivalTime (CarAtributes carAtributes, Double km) {
 
+        carAtributes.getActualSpeed();
+
+
+        Integer velocity = carAtributes.getActualSpeed();
         Integer answer = (int) (km/velocity);
 
         return answer;
     }       
 
-    public static void main(String[] args) {
+ 
 
-        CarAtributes carAtributes;
+     
 
-        CarTime carTime = new CarTime();
+public static void main(String[] args) {
+    System.out.println();
 
-        CarAcelerate carAcelerate = new CarAcelerate();
+    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
 
-        
+    carAtributes.setActualSpeed(150);
 
-        carTime.arrivalTime(carAcelerate.acelerate(, 30.0), 30.0);
-    }
+    CarTime carTime = new CarTime();
 
+
+    System.out.println(carTime.arrivalTime(carAtributes, 150.0));
+    
+
+}
     }
