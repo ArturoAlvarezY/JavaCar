@@ -33,5 +33,9 @@ public class CarAcelerateTest {
         carAtributes.setActualSpeed(70);
 
         assertThat(carAcelerate.evaluateSpeed(carAtributes), is("You are on rule!"));
+
+        carAtributes.setActualSpeed(-5);
+
+        assertThat(carAcelerate.evaluateSpeed(carAtributes), is("You cant set a velocity minor than cero"));
     }
 }

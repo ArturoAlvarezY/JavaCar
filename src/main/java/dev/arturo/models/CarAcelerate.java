@@ -12,6 +12,9 @@ public class CarAcelerate {
     public String evaluateSpeed(CarAtributes carAtributes){
         if (carAtributes.getActualSpeed() > 130) {
         return "Slow your speed Barry Allen!";            
+        } 
+        else if(carAtributes.getActualSpeed() < 0){
+            return "You cant set a velocity minor than cero";
         }
         return "You are on rule!";
     }
