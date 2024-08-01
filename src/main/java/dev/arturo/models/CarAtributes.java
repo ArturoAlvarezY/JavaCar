@@ -1,4 +1,4 @@
-package dev.arturo;
+package dev.arturo.models;
 
 import dev.arturo.models.enumatributes.CarColors;
 import dev.arturo.models.enumatributes.CarType;

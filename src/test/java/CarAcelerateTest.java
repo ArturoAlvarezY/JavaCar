@@ -3,14 +3,12 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.jupiter.api.Test;
 
-import dev.arturo.CarAcelerate;
-import dev.arturo.CarAtributes;
+import dev.arturo.models.CarAcelerate;
+import dev.arturo.models.CarAtributes;
 
 public class CarAcelerateTest {
     CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
     CarAcelerate carAcelerate = new CarAcelerate();
-    
-    
 
     @Test
     void testAcelerate() {

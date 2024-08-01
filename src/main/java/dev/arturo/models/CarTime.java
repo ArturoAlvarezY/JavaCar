@@ -1,4 +1,4 @@
-package dev.arturo;
+package dev.arturo.models;
 
 public class CarTime {
 

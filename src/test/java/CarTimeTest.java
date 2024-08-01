@@ -1,8 +1,9 @@
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*; 
-import dev.arturo.CarAtributes;
-import dev.arturo.CarTime;
+import static org.hamcrest.Matchers.*;
+
+import dev.arturo.models.CarAtributes;
+import dev.arturo.models.CarTime;
 
 public class CarTimeTest {
     CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
