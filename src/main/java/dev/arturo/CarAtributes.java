@@ -1,7 +1,9 @@
-package dev.arturo.models;
+package dev.arturo;
 
 import dev.arturo.models.enumatributes.CarColors;
+import dev.arturo.models.enumatributes.CarType;
 import dev.arturo.models.enumatributes.Foul;
+
 
 public class CarAtributes {
    private String branch;

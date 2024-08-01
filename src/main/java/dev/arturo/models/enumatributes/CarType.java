@@ -1,4 +1,4 @@
-package dev.arturo.models;
+package dev.arturo.models.enumatributes;
 
 public enum CarType {
     city, 

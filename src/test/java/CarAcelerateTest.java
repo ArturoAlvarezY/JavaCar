@@ -3,8 +3,8 @@ import static org.hamcrest.Matchers.is;
 
 import org.junit.jupiter.api.Test;
 
-import dev.arturo.models.CarAcelerate;
-import dev.arturo.models.CarAtributes;
+import dev.arturo.CarAcelerate;
+import dev.arturo.CarAtributes;
 
 public class CarAcelerateTest {
     CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
@@ -14,7 +14,7 @@ public class CarAcelerateTest {
 
     @Test
     void testAcelerate() {
-        carAtributes.setActualSpeed(25);
+        carAtributes.setActualSpeed(25); 
 
         assertThat(carAcelerate.acelerate(carAtributes, 50), is(75));
     }

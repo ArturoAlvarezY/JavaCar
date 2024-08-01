@@ -1,11 +1,11 @@
-package dev.arturo.models;
+package dev.arturo;
 
 public class CarAcelerate {
 
     public Integer acelerate (CarAtributes carAtributes, Integer newSpeed) {
         int speedAceleration = carAtributes.getActualSpeed() + newSpeed;
+
         carAtributes.setActualSpeed(speedAceleration);
-        
         return carAtributes.getActualSpeed();
     }
 
