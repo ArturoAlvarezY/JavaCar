@@ -1,4 +1,6 @@
-package dev.arturo.models;
+package dev.arturo;
+
+import dev.arturo.models.CarAtributes;
 
 public class CarTime {
 
