@@ -16,11 +16,11 @@ public class CarAtributes {
    private Integer speed;
    private CarColors carColors;
    private Integer actualSpeed;
-   
+   private Boolean automatic;
 
 
 public CarAtributes(String branch, Integer model, Double motor, Foul foul, CarType carType, Integer doors, Integer sits,
-        Integer speed, CarColors carColors, Integer actualSpeed) {
+        Integer speed, CarColors carColors, Integer actualSpeed, Boolean automatic) {
     this.branch = branch;
     this.model = model;
     this.motor = motor;
@@ -31,7 +31,11 @@ public CarAtributes(String branch, Integer model, Double motor, Foul foul, CarTy
     this.speed = speed;
     this.carColors = carColors;
     this.actualSpeed = 0;
+    this.automatic = automatic;
 }
+
+
+
 public String getBranch() {
     return branch;
 }
@@ -91,6 +95,14 @@ public Integer getActualSpeed() {
 }
 public void setActualSpeed(Integer actualSpeed) {
     this.actualSpeed = actualSpeed;
+}
+
+public Boolean getAutomatic() {
+    return automatic;
+}
+
+public void setAutomatic(Boolean automatic) {
+    this.automatic = automatic;
 }
     
 }

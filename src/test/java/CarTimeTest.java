@@ -6,7 +6,7 @@ import dev.arturo.CarTime;
 import dev.arturo.models.CarAtributes;
 
 public class CarTimeTest {
-    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
+    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null, null);
 
     CarTime carTime = new CarTime();
 

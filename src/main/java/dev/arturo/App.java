@@ -12,7 +12,7 @@ public final class App {
 
    
     public static void main(String[] args) {
-        CarAtributes carAtributes = new CarAtributes("Toyota", 2025, 5.0, Foul.gasoline, CarType.city, 5, 5, 140, CarColors.purple, 0);
+        CarAtributes carAtributes = new CarAtributes("Toyota", 2025, 5.0, Foul.gasoline, CarType.city, 5, 5, 140, CarColors.purple, 0, true);
 
         CarAcelerate carAcelerate = new CarAcelerate();
 

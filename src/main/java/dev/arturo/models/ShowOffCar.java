@@ -14,6 +14,7 @@ public class ShowOffCar {
         sb.append("Speed: ").append(carAtributes.getSpeed()).append("\n");
         sb.append("Color: ").append(carAtributes.getCarColors()).append("\n");
         sb.append("Actual speed: ").append(carAtributes.getActualSpeed()).append("\n");
+        sb.append("Automatic?: ").append(carAtributes.getAutomatic()).append("\n");
 
         return sb.toString();
     }

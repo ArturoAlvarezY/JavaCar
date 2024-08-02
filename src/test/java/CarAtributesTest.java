@@ -8,7 +8,7 @@ import dev.arturo.models.enumatributes.CarType;
 import dev.arturo.models.enumatributes.Foul;
 
 public class CarAtributesTest {
-    CarAtributes carAtributes = new CarAtributes("Toyota", 2007, 4.5, Foul.gasoline, CarType.suv, 5, 5, 220, CarColors.purple, 0);
+    CarAtributes carAtributes = new CarAtributes("Toyota", 2007, 4.5, Foul.gasoline, CarType.suv, 5, 5, 220, CarColors.purple, 0, true);
     @Test
     void testGetActualSpeed() {
     assertThat(carAtributes.getActualSpeed(), is(0));
@@ -118,6 +118,16 @@ public class CarAtributesTest {
     void testSetSpeed() {
         carAtributes.setSpeed(200);
         assertThat(carAtributes.getSpeed(), is(200));
-        
+    }
+
+    
+    @Test
+    void testSetAutomatic() {
+        carAtributes.setAutomatic(false);
+        assertThat(carAtributes.getAutomatic(), is(false));
+    }
+    @Test
+    void testGetAutomatic() {
+        assertThat(carAtributes.getAutomatic(), is(true));
     }
 }

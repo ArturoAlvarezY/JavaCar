@@ -7,7 +7,7 @@ import dev.arturo.models.CarAcelerate;
 import dev.arturo.models.CarAtributes;
 
 public class CarAcelerateTest {
-    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
+    CarAtributes carAtributes;
     CarAcelerate carAcelerate = new CarAcelerate();
 
     @Test

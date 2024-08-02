@@ -4,7 +4,7 @@ import dev.arturo.models.CarAtributes;
 
 public class CarTime {
 
-    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, 100, null, 0);
+    CarAtributes carAtributes;
 
 
     public Integer arrivalTime (CarAtributes carAtributes, Double km) {
@@ -18,22 +18,5 @@ public class CarTime {
         return answer;
     }       
 
- 
 
-     
-
-public static void main(String[] args) {
-    System.out.println();
-
-    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null);
-
-    carAtributes.setActualSpeed(150);
-
-    CarTime carTime = new CarTime();
-
-
-    System.out.println(carTime.arrivalTime(carAtributes, 150.0));
-    
-
-}
     }
