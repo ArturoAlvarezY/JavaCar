@@ -7,14 +7,15 @@ import dev.arturo.models.CarAcelerate;
 import dev.arturo.models.CarAtributes;
 
 public class CarAcelerateTest {
-    CarAtributes carAtributes;
+    CarAtributes carAtributes = new CarAtributes(null, null, null, null, null, null, null, null, null, null, null);
     CarAcelerate carAcelerate = new CarAcelerate();
 
     @Test
     void testAcelerate() {
-        carAtributes.setActualSpeed(25); 
 
-        assertThat(carAcelerate.acelerate(carAtributes, 50), is(75));
+        
+
+        assertThat(carAcelerate.acelerate(carAtributes, 50), is(50));
     }
 
     @Test

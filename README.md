@@ -47,6 +47,8 @@ Un método para mostrar los valores de los atributos de un Automóvil en
 pantalla.
 
 Un método main donde se deben crear un automóvil, colocar su velocidad actual en 100 km/h, aumentar su velocidad en 20 km/h, luego decrementar su velocidad en 50 km/h, y después frenar. Con cada cambio de velocidad, se debe mostrar en pantalla la velocidad actual.
+
+
 Alto policia: :
 Agregar a la clase Automóvil, un atributo para determinar si el vehículo es automático o no. Agregar los métodos get y set para dicho atributo. Modificar el constructor para inicializar dicho atributo.
 
